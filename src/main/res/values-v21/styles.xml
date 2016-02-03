@@ -11,6 +11,7 @@
     <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:statusBarColor">#ff0000</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
 </resources>
