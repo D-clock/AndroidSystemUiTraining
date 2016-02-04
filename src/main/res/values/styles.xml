@@ -12,4 +12,7 @@
 
     </style>
 
+    <style name="ColorTranslucentTheme" parent="AppTheme">
+
+    </style>
 </resources>

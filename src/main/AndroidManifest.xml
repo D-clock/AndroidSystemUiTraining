@@ -22,7 +22,8 @@
             android:theme="@style/ImageTranslucentTheme" />
         <activity
             android:name=".ui.ColorTranslucentBarActivity"
-            android:label="@string/color_translucent_bar" />
+            android:label="@string/color_translucent_bar"
+            android:theme="@style/ColorTranslucentTheme" />
     </application>
 
 </manifest>
