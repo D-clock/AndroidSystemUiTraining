@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         findViewById(R.id.btn_image_translucent).setOnClickListener(this);
         findViewById(R.id.btn_color_translucent).setOnClickListener(this);
+        findViewById(R.id.btn_toolbar).setOnClickListener(this);
 
     }
 
@@ -28,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (viewId == R.id.btn_color_translucent) {
             Intent translucentBarIntent = new Intent(this, ColorTranslucentBarActivity.class);
+            startActivity(translucentBarIntent);
+
+        } else if (viewId == R.id.btn_toolbar) {
+            Intent translucentBarIntent = new Intent(this, ToolBarActivity.class);
             startActivity(translucentBarIntent);
 
         }

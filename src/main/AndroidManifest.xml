@@ -24,6 +24,9 @@
             android:name=".ui.ColorTranslucentBarActivity"
             android:label="@string/color_translucent_bar"
             android:theme="@style/ColorTranslucentTheme" />
+        <activity
+            android:name=".ui.ToolBarActivity"
+            android:label="@string/tool_bar" />
     </application>
 
 </manifest>
