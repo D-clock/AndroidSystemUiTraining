@@ -3,4 +3,8 @@
     <string name="image_translucent_bar">Image Translucent Bar Training</string>
     <string name="color_translucent_bar">Color Translucent Bar Training</string>
     <string name="tool_bar">ToolBar Training</string>
+    <string name="menu_search">查找</string>
+    <string name="menu_notifications">通知</string>
+    <string name="menu_settings">设置</string>
+    <string name="menu_about_us">关于</string>
 </resources>

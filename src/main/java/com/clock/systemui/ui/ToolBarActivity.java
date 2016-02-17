@@ -15,6 +15,12 @@ public class ToolBarActivity extends BaseActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.inflateMenu(R.menu.toolbar_menu);
+        /*toolbar.setTitle("title");
+        toolbar.setSubtitle("subTitle");
+        toolbar.setLogo(R.mipmap.ic_launcher);*/
+        toolbar.setNavigationIcon(R.mipmap.ic_drawer_home);
+
+
     }
 
 }
