@@ -7,4 +7,5 @@
     <string name="menu_notifications">通知</string>
     <string name="menu_settings">设置</string>
     <string name="menu_about_us">关于</string>
+    <string name="toolbar_title">首页</string>
 </resources>

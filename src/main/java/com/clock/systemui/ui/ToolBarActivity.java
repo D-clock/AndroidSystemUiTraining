@@ -18,8 +18,9 @@ public class ToolBarActivity extends BaseActivity {
         /*toolbar.setTitle("title");
         toolbar.setSubtitle("subTitle");
         toolbar.setLogo(R.mipmap.ic_launcher);*/
+        toolbar.setTitle(R.string.toolbar_title);
+        toolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         toolbar.setNavigationIcon(R.mipmap.ic_drawer_home);
-
 
     }
 
