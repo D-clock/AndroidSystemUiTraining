@@ -13,3 +13,7 @@ http://www.google.com/design/spec/components/toolbars.html#toolbars-usage
 为什么Toolbar在xml里面的设置不生效，是某些机型而已吗？
 
 style里面的属性需要注意一下。actionOverflowButtonStyle 和 android:actionOverflowButtonStyle的区别
+
+自定义属性的问题
+
+菜单文字设置： actionMenuTextColor无效，android:textColorPrimary才有效

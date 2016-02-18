@@ -39,7 +39,6 @@
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>
     </style>
 
-    <!-- Style to replace actionbar overflow icon. set item 'android:actionOverflowButtonStyle' in AppTheme -->
     <style name="ActionButton.Overflow.ZhiHu" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
         <item name="android:src">@mipmap/ic_menu_more_overflow</item>
     </style>
