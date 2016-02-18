@@ -17,7 +17,7 @@ public class ToolBarActivity extends BaseActivity {
         setContentView(R.layout.activity_tool_bar);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.inflateMenu(R.menu.toolbar_menu);//设置右上角的填充菜单
+        toolbar.inflateMenu(R.menu.base_toolbar_menu);//设置右上角的填充菜单
 
         toolbar.setNavigationIcon(R.mipmap.ic_drawer_home);//第一个图标
         toolbar.setLogo(R.mipmap.ic_launcher);//第二个图标

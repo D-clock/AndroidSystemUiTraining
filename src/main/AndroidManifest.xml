@@ -32,9 +32,6 @@
             android:name=".ui.toolbar.ZhiHuActivity"
             android:label="@string/zhi_hu"
             android:theme="@style/Theme.ToolBar.ZhiHu" />
-        <activity
-            android:name=".ui.toolbar.NetEaseMusicActivity"
-            android:label="@string/net_ease_music" />
 
     </application>
 

@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.clock.systemui.R;
-import com.clock.systemui.ui.toolbar.NetEaseMusicActivity;
 import com.clock.systemui.ui.toolbar.ToolBarActivity;
 import com.clock.systemui.ui.toolbar.ZhiHuActivity;
 import com.clock.systemui.ui.translucentbar.ColorTranslucentBarActivity;
@@ -23,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_color_translucent).setOnClickListener(this);
         findViewById(R.id.btn_toolbar_base).setOnClickListener(this);
         findViewById(R.id.btn_toolbar_zhihu).setOnClickListener(this);
-        findViewById(R.id.btn_toolbar_music).setOnClickListener(this);
 
     }
 
@@ -44,10 +42,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (viewId == R.id.btn_toolbar_zhihu) {
             Intent translucentBarIntent = new Intent(this, ZhiHuActivity.class);
-            startActivity(translucentBarIntent);
-
-        } else if (viewId == R.id.btn_toolbar_music) {
-            Intent translucentBarIntent = new Intent(this, NetEaseMusicActivity.class);
             startActivity(translucentBarIntent);
 
         }

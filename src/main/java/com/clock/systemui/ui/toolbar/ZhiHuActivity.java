@@ -20,7 +20,7 @@ public class ZhiHuActivity extends BaseActivity {
         setContentView(R.layout.activity_zhi_hu);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.inflateMenu(R.menu.toolbar_menu);
+        toolbar.inflateMenu(R.menu.zhihu_toolbar_menu);
 
         toolbar.setNavigationIcon(R.mipmap.ic_drawer_home);
 

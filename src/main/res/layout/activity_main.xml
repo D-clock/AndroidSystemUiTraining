@@ -31,10 +31,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="ToolBar（知乎）" />
-
-    <Button
-        android:id="@+id/btn_toolbar_music"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ToolBar（网易云音乐 ）" />
 </LinearLayout>
