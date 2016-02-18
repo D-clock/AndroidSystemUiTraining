@@ -21,8 +21,20 @@
         android:text="Color Translucent Bar" />
 
     <Button
-        android:id="@+id/btn_toolbar"
+        android:id="@+id/btn_toolbar_base"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToolBar" />
+        android:text="ToolBar（Base）" />
+
+    <Button
+        android:id="@+id/btn_toolbar_zhihu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToolBar（知乎）" />
+
+    <Button
+        android:id="@+id/btn_toolbar_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToolBar（网易云音乐 ）" />
 </LinearLayout>

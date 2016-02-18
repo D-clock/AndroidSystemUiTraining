@@ -1,4 +1,4 @@
-package com.clock.systemui.ui;
+package com.clock.systemui.ui.translucentbar;
 
 import android.os.Bundle;
 import android.view.View;

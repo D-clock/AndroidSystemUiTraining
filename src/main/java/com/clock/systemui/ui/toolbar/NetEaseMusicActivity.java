@@ -1,4 +1,4 @@
-package com.clock.systemui.ui;
+package com.clock.systemui.ui.toolbar;
 
 import android.os.Bundle;
 
@@ -6,16 +6,16 @@ import com.clock.systemui.R;
 import com.clock.systemui.ui.base.BaseActivity;
 
 /**
- * Translucent System Bar特性的使用
+ * 仿网易云音乐主界面Toolbar的使用
  *
  * @author Clock
- * @since 2016-02-03
+ * @since 2016-02-18
  */
-public class ImageTranslucentBarActivity extends BaseActivity {
+public class NetEaseMusicActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_image_translucent_bar);
+        setContentView(R.layout.activity_net_ease_music);
     }
 }

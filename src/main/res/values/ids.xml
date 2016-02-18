@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_search" type="id">false</item>
+    <item name="action_notification" type="id">false</item>
+    <item name="action_settings" type="id">false</item>
+    <item name="action_about" type="id">false</item>
+</resources>

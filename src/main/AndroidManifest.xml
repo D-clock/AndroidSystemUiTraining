@@ -17,17 +17,25 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.ImageTranslucentBarActivity"
+            android:name=".ui.translucentbar.ImageTranslucentBarActivity"
             android:label="@string/image_translucent_bar"
             android:theme="@style/ImageTranslucentTheme" />
         <activity
-            android:name=".ui.ColorTranslucentBarActivity"
+            android:name=".ui.translucentbar.ColorTranslucentBarActivity"
             android:label="@string/color_translucent_bar"
             android:theme="@style/ColorTranslucentTheme" />
         <activity
-            android:name=".ui.ToolBarActivity"
+            android:name=".ui.toolbar.ToolBarActivity"
             android:label="@string/tool_bar"
-            android:theme="@style/ToolBarTheme" />
+            android:theme="@style/Theme.ToolBar.Base" />
+        <activity
+            android:name=".ui.toolbar.ZhiHuActivity"
+            android:label="@string/zhi_hu"
+            android:theme="@style/Theme.ToolBar.ZhiHu" />
+        <activity
+            android:name=".ui.toolbar.NetEaseMusicActivity"
+            android:label="@string/net_ease_music" />
+
     </application>
 
 </manifest>

@@ -3,24 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@id/action_search"
         android:icon="@mipmap/ic_search"
-        android:orderInCategory="10"
         android:title="@string/menu_search"
         app:showAsAction="ifRoom" />
 
     <item
+        android:id="@id/action_notification"
         android:icon="@mipmap/ic_notifications"
-        android:orderInCategory="20"
         android:title="@string/menu_notifications"
         app:showAsAction="ifRoom" />
 
     <item
-        android:orderInCategory="30"
+        android:id="@id/action_settings"
+        android:orderInCategory="100"
         android:title="@string/menu_settings"
         app:showAsAction="never" />
 
     <item
-        android:orderInCategory="40"
+        android:id="@id/action_about"
+        android:orderInCategory="101"
         android:title="@string/menu_about_us"
         app:showAsAction="never" />
 </menu>
