@@ -189,3 +189,61 @@ Toast打印出来的文字都往上偏移了。这里也是我疏忽的地方，
 
 ## 补充更新（2016-02-19）
 
+一些热心的网友反馈，在Android 4.4平台上使用第二种方法失效。我立马跑到Android4.4的真机运行一遍，果真出现下面的bug，顶部变成黑白渐变了。
+
+![4.4平台上第二种方案出现的BUG](http://g.hiphotos.baidu.com/image/pic/item/8718367adab44aed68e14983b41c8701a18bfb2e.jpg)
+
+在此，先为自己的疏忽向广大读者说声抱歉。以后会最大程度的避免这种低级错误的产生。下面给出此Bug的修复方案：
+
+第一步：去到 ColorTranslucentBarActivity 的布局文件中，将布局划分成为**标题布局**和**内容布局**两部分；
+
+第二步：将 ColorTranslucentBarActivity 的**根布局**颜色设置与**标题布局**的颜色一致，并将**内容布局**设置为白色；
+
+```xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_31c27c"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--标题布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/color_31c27c">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="QQ Music"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <!--内容布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_show_toast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Show a toast" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+```
+
+经过以上两步，即可在 4.4 平台上实现 Translucent System Bar 的效果 。最后附上修复bug后的效果图一张。
+
+![Android 4.4平台bug修复后的效果图](http://g.hiphotos.baidu.com/image/pic/item/37d3d539b6003af34c163607322ac65c1038b62d.jpg)

@@ -4,7 +4,7 @@
 
 ## 最新更新 （2016-02-19）
 
-- 修复当前工程 Translucent System Bar 效果在 Android4.4 平台上显示的BUG;
+- 修复当前工程 Translucent System Bar 效果在 Android4.4 平台上显示的BUG;2/19/2016 12:05:44 PM 
 
 ## 实践总结
 
