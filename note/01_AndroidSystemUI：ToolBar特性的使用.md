@@ -4,10 +4,20 @@
 
 ## 初识 Toolbar
 
-说起 **Toolbar** ，其实并没有什么高深莫测，它本质上就是一个系统控件。若要说它和其他系统控件有什么区别，那应该就是 Google 推荐大家使用 **Toolbar** 来作为Android客户端的导航栏，除此之外并没有其他太大区别。而 **Toolbar** 和 **Actionbar** 相比，
+说起 **Toolbar** ，它就是一个系统控件，并没有什么高深莫测之处。在 **API21** 开始, Google 开始推荐开发者使用 **Toolbar** 来作为客户端的导航栏，为了把这种设计风格推广到低版本的 Android SDK ，Google 自然也推出了兼容版本的 **Toolbar**，使用的时候只需要导入 **appcompat-v7** 兼容包即可。说了，这么多可能还是云里雾里，接下来我们直接进入正题。
+
+![关键部分代码](http://d.hiphotos.baidu.com/image/pic/item/b7fd5266d0160924c03dfb73d30735fae6cd34b9.jpg)
+
+上面的截图已经圈出核心代码实现部分，下面做一个简单的介绍：
+
+- toolbar包下共两个Activity。ToolBarActivity用于展示Toolbar的基本使用，ZhiHuActivity是在掌握Toolbar的使用后，对知乎主页面的一个高仿实现；
+
+- 两个Activity对应的布局文件(activity_tool_bar.xml 和 activity_zhi_hu.xml)和菜单（base_toolbar_menu.xml 和 zhihu_toolbar_menu.xml）；
+
+- values、values-v19、values-v21中的styles.xml包含了为Toolbar设置的一些theme（后面会再详细介绍）；
 
 
-
+![ToolbarActivity效果图](http://b.hiphotos.baidu.com/image/pic/item/908fa0ec08fa513d9fb028b63a6d55fbb2fbd944.jpg)
 
 
 
