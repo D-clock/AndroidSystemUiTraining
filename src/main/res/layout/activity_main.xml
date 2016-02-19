@@ -20,15 +20,4 @@
         android:layout_height="wrap_content"
         android:text="Color Translucent Bar" />
 
-    <Button
-        android:id="@+id/btn_toolbar_base"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ToolBar（Base）" />
-
-    <Button
-        android:id="@+id/btn_toolbar_zhihu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ToolBar（知乎）" />
 </LinearLayout>

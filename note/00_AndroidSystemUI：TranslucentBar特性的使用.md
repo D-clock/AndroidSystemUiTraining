@@ -186,3 +186,6 @@ Toast打印出来的文字都往上偏移了。这里也是我疏忽的地方，
 - android:fitsSystemWindows设置要在布局文件中，不要到theme中设置；
 
 怎样，介绍到这里，你会使用 Translucent System Bar 了吗？赶快到你的app中引入吧！
+
+## 补充更新（2016-02-19）
+

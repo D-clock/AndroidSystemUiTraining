@@ -2,9 +2,9 @@
 
 本代码库整理总结 Android 系统自身UI特性，主要包含**代码实践**和**特性总结**两方面的内容。有兴趣的朋友欢迎fork、star、watch。
 
-## 最新更新 （2016-02-04）
+## 最新更新 （2016-02-19）
 
-- 完成对 Translucent System Bar 特性使用的总结;
+- 修复当前工程 Translucent System Bar 效果在 Android4.4 平台上显示的BUG;
 
 ## 实践总结
 
