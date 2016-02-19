@@ -26,12 +26,11 @@
             android:theme="@style/ColorTranslucentTheme" />
         <activity
             android:name=".ui.toolbar.ToolBarActivity"
-            android:label="@string/tool_bar"
-            android:theme="@style/Theme.ToolBar.Base" />
+            android:label="@string/tool_bar" />
         <activity
             android:name=".ui.toolbar.ZhiHuActivity"
             android:label="@string/zhi_hu"
-            android:theme="@style/Theme.ToolBar.ZhiHu" />
+            android:theme="@style/Theme.ZhiHu" />
 
     </application>
 

@@ -17,10 +17,8 @@
     </style>
 
     <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColorPrimary">@color/color_red</item>
     </style>
 
     <style name="Theme.ToolBar.Base.Title" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
@@ -33,9 +31,11 @@
         <item name="android:textColor">@color/color_43d28d</item>
     </style>
 
+    <style name="Theme.ZhiHu" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
+
     <style name="Theme.ToolBar.ZhiHu" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimaryDark">@color/color_005eaa</item>
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>
     </style>
 

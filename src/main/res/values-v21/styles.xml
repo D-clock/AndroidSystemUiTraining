@@ -21,14 +21,18 @@
         <item name="android:statusBarColor">@color/color_31c27c</item>
     </style>
 
+    <style name="Theme.ZhiHu" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@color/color_0176da</item>
+    </style>
+
     <style name="Theme.ToolBar.ZhiHu" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">true</item>
         <item name="android:statusBarColor">@color/color_0176da</item>
-        <item name="android:textSize">30sp</item>
-        <item name="android:textColorPrimary">@color/color_red</item>
         <item name="actionOverflowButtonStyle">@style/ActionButton.Overflow.ZhiHu</item>
     </style>
-
 </resources>
