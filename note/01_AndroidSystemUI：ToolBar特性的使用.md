@@ -242,7 +242,7 @@ xmlns:toolbar="http://schemas.android.com/apk/res-auto"(这里的toolbar可以�
 
 此时，如果我有需求要改变一下item文字颜色，应该怎么破？我按照网上比较普遍的解决方案，做了如下两步的修改操作：
 
-1. **在styles.xml中自定义一个Theme，并设置 actionMenuTextColor 属性（注意：不是 android:actionMenuTextColor ）**
+- **在styles.xml中自定义一个Theme，并设置 actionMenuTextColor 属性（注意：不是 android:actionMenuTextColor ）**
 
 ```xml
 
@@ -252,7 +252,7 @@ xmlns:toolbar="http://schemas.android.com/apk/res-auto"(这里的toolbar可以�
 
 ```
 
-2. **在布局文件的Toolbar中设置popupTheme（注意：是toolbar:xxx，不是android:xxx）**
+- **在布局文件的Toolbar中设置popupTheme（注意：是toolbar:xxx，不是android:xxx）**
 
 ```xml
 
