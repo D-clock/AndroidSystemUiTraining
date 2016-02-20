@@ -10,9 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/color_0176da"
-        android:theme="@style/Theme.ToolBar.Base"
-        toolbar:subtitle="456"
-        toolbar:title="123">
+        toolbar:popupTheme="@style/Theme.ToolBar.Base">
 
         <!--自定义控件-->
         <TextView

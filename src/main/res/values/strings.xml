@@ -9,4 +9,6 @@
     <string name="menu_about_us">关于</string>
     <string name="home_page">首页</string>
     <string name="zhi_hu">知乎</string>
+    <string name="item_01">Item 1</string>
+    <string name="item_02">Item 2</string>
 </resources>
