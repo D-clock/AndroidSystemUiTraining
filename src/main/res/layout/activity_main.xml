@@ -21,6 +21,12 @@
         android:text="Color Translucent Bar" />
 
     <Button
+        android:id="@+id/btn_best_translucent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Best Translucent Bar" />
+
+    <Button
         android:id="@+id/btn_toolbar_base"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

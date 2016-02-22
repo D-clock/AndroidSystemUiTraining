@@ -247,3 +247,41 @@ Toast打印出来的文字都往上偏移了。这里也是我疏忽的地方，
 经过以上两步，即可在 4.4 平台上实现 Translucent System Bar 的效果 。最后附上修复bug后的效果图一张。
 
 ![Android 4.4平台bug修复后的效果图](http://g.hiphotos.baidu.com/image/pic/item/37d3d539b6003af34c163607322ac65c1038b62d.jpg)
+
+## 补充更新（2016-02-22）
+
+很多童鞋反应，在每个布局文件中都要写上 **android:fitsSystemWindows="true"** ,有没有更佳方便的方法，本人当时没有思路。今天收到[coder_sharp ](http://www.jianshu.com/users/ef3b7467fa60/timeline)童鞋反馈的一种更为简便的思路
+
+![coder_sharp童鞋提供的新思路](http://c.hiphotos.baidu.com/image/pic/item/d043ad4bd11373f040577ff3a30f4bfbfbed0475.jpg)
+
+个人把他的思路，整理成代码，如下：
+
+```java
+
+public abstract class TranslucentBarBaseActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        supportRequestWindowFeature(Window.FEATURE_NO_TITLE);
+
+        setContentView(getLayoutResId());//把设置布局文件的操作交给继承的子类
+
+        ViewGroup contentFrameLayout = (ViewGroup) findViewById(Window.ID_ANDROID_CONTENT);
+        View parentView = contentFrameLayout.getChildAt(0);
+        if (parentView != null && Build.VERSION.SDK_INT >= 14) {
+            parentView.setFitsSystemWindows(true);
+        }
+    }
+
+    /**
+     * 返回当前Activity布局文件的id
+     *
+     * @return
+     */
+    abstract protected int getLayoutResId();
+}
+
+```
+
+所有需要实现效果的界面继承以上的父类，并实现 **getLayoutResId** 抽象方法即可，就可以不用在布局文件中不断做重复操作了，具体代码详见工程中的 **TranslucentBarBaseActivity** 和 **BestTranslucentBarActivity**。
