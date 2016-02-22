@@ -1,4 +1,4 @@
-package com.clock.systemui.ui.toolbar;
+package com.clock.systemui.ui.activity.toolbar;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -6,7 +6,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.clock.systemui.R;
-import com.clock.systemui.ui.base.BaseActivity;
+import com.clock.systemui.ui.activity.base.BaseActivity;
 
 /**
  * Toolbar的基本使用

@@ -1,4 +1,4 @@
-package com.clock.systemui.ui;
+package com.clock.systemui.ui.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -6,10 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.clock.systemui.R;
-import com.clock.systemui.ui.toolbar.ToolBarActivity;
-import com.clock.systemui.ui.toolbar.ZhiHuActivity;
-import com.clock.systemui.ui.translucentbar.ColorTranslucentBarActivity;
-import com.clock.systemui.ui.translucentbar.ImageTranslucentBarActivity;
+import com.clock.systemui.ui.activity.toolbar.ToolBarActivity;
+import com.clock.systemui.ui.activity.toolbar.ZhiHuActivity;
+import com.clock.systemui.ui.activity.translucentbar.ColorTranslucentBarActivity;
+import com.clock.systemui.ui.activity.translucentbar.ImageTranslucentBarActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 

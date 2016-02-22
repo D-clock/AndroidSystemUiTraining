@@ -1,4 +1,4 @@
-package com.clock.systemui.ui.base;
+package com.clock.systemui.ui.activity.base;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

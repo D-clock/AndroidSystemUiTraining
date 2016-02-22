@@ -1,10 +1,10 @@
-package com.clock.systemui.ui.toolbar;
+package com.clock.systemui.ui.activity.toolbar;
 
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import com.clock.systemui.R;
-import com.clock.systemui.ui.base.BaseActivity;
+import com.clock.systemui.ui.activity.base.BaseActivity;
 
 /**
  * 仿知乎主界面Toolbar的应用

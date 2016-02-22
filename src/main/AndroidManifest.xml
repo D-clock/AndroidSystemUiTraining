@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,18 +17,18 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.translucentbar.ImageTranslucentBarActivity"
+            android:name=".ui.activity.translucentbar.ImageTranslucentBarActivity"
             android:label="@string/image_translucent_bar"
             android:theme="@style/ImageTranslucentTheme" />
         <activity
-            android:name=".ui.translucentbar.ColorTranslucentBarActivity"
+            android:name=".ui.activity.translucentbar.ColorTranslucentBarActivity"
             android:label="@string/color_translucent_bar"
             android:theme="@style/ColorTranslucentTheme" />
         <activity
-            android:name=".ui.toolbar.ToolBarActivity"
+            android:name=".ui.activity.toolbar.ToolBarActivity"
             android:label="@string/tool_bar" />
         <activity
-            android:name=".ui.toolbar.ZhiHuActivity"
+            android:name=".ui.activity.toolbar.ZhiHuActivity"
             android:label="@string/zhi_hu"
             android:theme="@style/Theme.ZhiHu" />
 
