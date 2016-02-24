@@ -35,7 +35,10 @@
             android:label="@string/zhi_hu"
             android:theme="@style/Theme.ZhiHu" />
         <activity
-            android:name=".ui.activity.navigation.SimpleNavigationActivity"
+            android:name=".ui.activity.navigation.SimpleDrawerActivity"
+            android:label="@string/simple_drawer" />
+        <activity
+            android:name=".ui.activity.navigation.SimpleNavigationDrawerActivity"
             android:label="@string/simple_navigation_drawer" />
     </application>
 

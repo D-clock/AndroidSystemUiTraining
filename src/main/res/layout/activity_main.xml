@@ -40,10 +40,14 @@
 
 
     <Button
-        android:id="@+id/btn_simple_navigation"
+        android:id="@+id/btn_simple_drawer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simple Navigation View" />
+        android:text="Simple Drawer" />
 
-
+    <Button
+        android:id="@+id/btn_simple_navigation_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simple Navigation Drawer" />
 </LinearLayout>

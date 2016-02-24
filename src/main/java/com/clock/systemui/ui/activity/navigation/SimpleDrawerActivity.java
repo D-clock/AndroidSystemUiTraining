@@ -16,14 +16,14 @@ import com.clock.systemui.R;
  * @author Clock
  * @since 2016-02-24
  */
-public class SimpleNavigationActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
+public class SimpleDrawerActivity extends AppCompatActivity implements RadioGroup.OnCheckedChangeListener {
 
     private DrawerLayout mDrawer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_navigation);
+        setContentView(R.layout.activity_simple_drawer);
 
         mDrawer = (DrawerLayout) findViewById(R.id.simple_navigation_drawer);
         mDrawer.setDrawerListener(new DrawerLayout.DrawerListener() {
@@ -34,12 +34,12 @@ public class SimpleNavigationActivity extends AppCompatActivity implements Radio
 
             @Override
             public void onDrawerOpened(View drawerView) {
-                Toast.makeText(SimpleNavigationActivity.this, "onDrawerOpened", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SimpleDrawerActivity.this, "onDrawerOpened", Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onDrawerClosed(View drawerView) {
-                Toast.makeText(SimpleNavigationActivity.this, "onDrawerClosed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(SimpleDrawerActivity.this, "onDrawerClosed", Toast.LENGTH_SHORT).show();
             }
 
             @Override
