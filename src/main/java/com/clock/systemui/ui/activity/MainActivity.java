@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.clock.systemui.R;
+import com.clock.systemui.ui.activity.navigation.SimpleNavigationActivity;
 import com.clock.systemui.ui.activity.toolbar.ToolBarActivity;
 import com.clock.systemui.ui.activity.toolbar.ZhiHuActivity;
 import com.clock.systemui.ui.activity.translucentbar.BestTranslucentBarActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_best_translucent).setOnClickListener(this);
         findViewById(R.id.btn_toolbar_base).setOnClickListener(this);
         findViewById(R.id.btn_toolbar_zhihu).setOnClickListener(this);
+        findViewById(R.id.btn_simple_navigation).setOnClickListener(this);
 
     }
 
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (viewId == R.id.btn_toolbar_zhihu) {
             Intent translucentBarIntent = new Intent(this, ZhiHuActivity.class);
+            startActivity(translucentBarIntent);
+
+        } else if (viewId == R.id.btn_simple_navigation) {
+            Intent translucentBarIntent = new Intent(this, SimpleNavigationActivity.class);
             startActivity(translucentBarIntent);
 
         }
