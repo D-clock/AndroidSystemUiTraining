@@ -18,7 +18,13 @@
     <style name="ColorTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="android:windowTranslucentStatus">false</item>
         <item name="android:windowTranslucentNavigation">true</item>
-        <item name="android:statusBarColor">@color/color_31c27c</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Translucent.Navigation" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.ZhiHu" parent="Theme.AppCompat.Light.NoActionBar">

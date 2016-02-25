@@ -285,3 +285,34 @@ public abstract class TranslucentBarBaseActivity extends AppCompatActivity {
 ```
 
 所有需要实现效果的界面继承以上的父类，并实现 **getLayoutResId** 抽象方法即可，就可以不用在布局文件中不断做重复操作了，具体代码详见工程中的 **TranslucentBarBaseActivity** 和 **BestTranslucentBarActivity**。
+
+## 补充更新（2016-02-25）
+
+近几天在琢磨 Material Design 的一些新控件效果，意外的发现上面提到的第二种方式，在将原 **values-v21/style.xml**
+
+```xml
+
+<style name="ColorTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+	....
+	.... 
+	<item name="android:statusBarColor">@color/color_31c27c</item>
+
+</style>
+
+```
+
+换成
+
+```xml
+
+<style name="ColorTranslucentTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+	....
+	.... 
+	<item name="android:statusBarColor">@android:color/transparent</item>
+
+</style>
+
+
+```
+
+之后，依旧可以实现同样的效果。那么，到了这里你就可以发现，上面提到的两种方式从本质上其实是殊途同归（最终总结得到的就是一种方式）！

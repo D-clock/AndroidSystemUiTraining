@@ -39,7 +39,8 @@
             android:label="@string/simple_drawer" />
         <activity
             android:name=".ui.activity.navigation.SimpleNavigationDrawerActivity"
-            android:label="@string/simple_navigation_drawer" />
+            android:label="@string/simple_navigation_drawer"
+            android:theme="@style/Theme.Translucent.Navigation" />
     </application>
 
 </manifest>

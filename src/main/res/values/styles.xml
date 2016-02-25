@@ -16,6 +16,10 @@
 
     </style>
 
+    <style name="Theme.Translucent.Navigation" parent="AppTheme">
+
+    </style>
+
     <style name="Theme.ToolBar.Base" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textSize">20sp</item>
         <item name="android:textColorPrimary">@color/color_red</item>
