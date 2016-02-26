@@ -11,8 +11,3 @@
 
 - [Translucent System Bar 的最佳实践](note/00_AndroidSystemUI：TranslucentBar特性的使用.md)
 - [最详细的 Toolbar 开发实践总结](note/01_AndroidSystemUI：ToolBar特性的使用.md)
-
-## 接下来要做的
-
-- 整理总结Immersive-Mode（沉浸模式）的使用
-- 整理总结Toolbar的使用

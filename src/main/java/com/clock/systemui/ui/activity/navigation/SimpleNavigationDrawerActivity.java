@@ -1,19 +1,9 @@
 package com.clock.systemui.ui.activity.navigation;
 
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.clock.systemui.R;
@@ -37,7 +27,7 @@ public class SimpleNavigationDrawerActivity extends BaseActivity {
 
         mDrawer = (DrawerLayout) findViewById(R.id.drawer);
 
-        mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
+        mNavigationView = (NavigationView) findViewById(R.id.navigation_view);//ScrimInsetsFrameLayout
         mNavigationView.setItemIconTintList(null);//设置菜单图标的颜色
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
