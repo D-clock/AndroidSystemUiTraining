@@ -27,8 +27,8 @@ public class SimpleNavigationDrawerActivity extends BaseActivity {
 
         mDrawer = (DrawerLayout) findViewById(R.id.drawer);
 
-        mNavigationView = (NavigationView) findViewById(R.id.navigation_view);//ScrimInsetsFrameLayout
-        mNavigationView.setItemIconTintList(null);//设置菜单图标的颜色
+        mNavigationView = (NavigationView) findViewById(R.id.navigation_view);
+        mNavigationView.setItemIconTintList(null);//设置菜单图标恢复本来的颜色
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {

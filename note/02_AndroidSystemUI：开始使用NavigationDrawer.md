@@ -1,4 +1,4 @@
-# 谈谈我眼中的 NavigationDrawer 
+# 最详细的 NavigationDrawer 开发实践总结 
 
 
 
