@@ -1,5 +1,10 @@
 # 最详细的 NavigationDrawer 开发实践总结 
 
+今天开始写第三篇Android系统UI特性的实践文章，还没看过前两篇文章且又有兴趣的童鞋，可以戳下面的链接阅读（**有问题欢迎反馈哦**）：
+
+1. [Android开发：Translucent System Bar 的最佳实践](http://www.jianshu.com/p/0acc12c29c1b)
+2. [Android开发：最详细的 Toolbar 开发实践总结](http://www.jianshu.com/p/79604c3ddcae)
+
 
 
 ## DrawerLayout 
@@ -28,13 +33,15 @@ http://developer.android.com/reference/android/support/v4/widget/DrawerLayout.ht
 
 http://developer.android.com/reference/android/support/design/widget/NavigationView.html
 
-左上角的动画效果：http://www.jianshu.com/p/3fe2acac0ddb
+左上角的动画效果：http://www.mincoder.com/article/5541.shtml（动画效果已经获得官方支持）
 
-
-使用 ScrimInsetsFrameLayout 来仿造实现网易的效果
 
 ## 需要注意的问题
 
 DrawerLayout 在设置 android:layout_width="wrap_content" 的时候会闪退报错
 
 需要引入最新的 库，引入 compile 'com.android.support:design:23.1.1' 正常 ，，，但是 compile 'com.android.support:design:23.1.0' 会报错
+
+
+## 彩蛋
+
