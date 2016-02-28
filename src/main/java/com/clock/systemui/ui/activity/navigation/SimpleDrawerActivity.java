@@ -26,7 +26,7 @@ public class SimpleDrawerActivity extends AppCompatActivity implements RadioGrou
         setContentView(R.layout.activity_simple_drawer);
 
         mDrawer = (DrawerLayout) findViewById(R.id.simple_navigation_drawer);
-        mDrawer.setDrawerListener(new DrawerLayout.DrawerListener() {
+        mDrawer.setDrawerListener(new DrawerLayout.DrawerListener() { //监听DrawerLayout的侧滑
             @Override
             public void onDrawerSlide(View drawerView, float slideOffset) {
 
@@ -59,7 +59,7 @@ public class SimpleDrawerActivity extends AppCompatActivity implements RadioGrou
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         if (checkedId == R.id.rbtn_pink) {
-            mDrawer.setScrimColor(getResources().getColor(R.color.color_e81d62));
+            mDrawer.setScrimColor(getResources().getColor(R.color.color_e81d62));//设置滑动时渐变的阴影颜色
 
         } else if (checkedId == R.id.rbtn_green) {
             mDrawer.setScrimColor(getResources().getColor(R.color.color_4bae4f));
@@ -68,7 +68,7 @@ public class SimpleDrawerActivity extends AppCompatActivity implements RadioGrou
             mDrawer.setScrimColor(getResources().getColor(R.color.color_2095f2));
 
         } else if (checkedId == R.id.rbtn_from_left) {
-            mDrawer.openDrawer(Gravity.LEFT);
+            mDrawer.openDrawer(Gravity.LEFT);//打开菜单栏
 
         } else if (checkedId == R.id.rbtn_from_right) {
             mDrawer.openDrawer(Gravity.RIGHT);
