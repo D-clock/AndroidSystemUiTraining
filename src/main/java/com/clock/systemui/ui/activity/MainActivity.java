@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.clock.systemui.R;
 import com.clock.systemui.ui.activity.navigation.CloudMusicActivity;
+import com.clock.systemui.ui.activity.navigation.NavigationDrawerAnimationActivity;
 import com.clock.systemui.ui.activity.navigation.SimpleDrawerActivity;
 import com.clock.systemui.ui.activity.navigation.SimpleNavigationDrawerActivity;
 import com.clock.systemui.ui.activity.toolbar.ToolBarActivity;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_simple_drawer).setOnClickListener(this);
         findViewById(R.id.btn_simple_navigation_drawer).setOnClickListener(this);
         findViewById(R.id.btn_cloud_music).setOnClickListener(this);
+        findViewById(R.id.btn_navigation_drawer_anim).setOnClickListener(this);
 
     }
 
@@ -65,8 +67,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(simpleNavigationDrawerIntent);
 
         } else if (viewId == R.id.btn_cloud_music) {
-            Intent cloudmusicIntent = new Intent(this, CloudMusicActivity.class);
-            startActivity(cloudmusicIntent);
+            Intent cloudMusicIntent = new Intent(this, CloudMusicActivity.class);
+            startActivity(cloudMusicIntent);
+
+        } else if (viewId == R.id.btn_navigation_drawer_anim){
+            Intent animIntent = new Intent(this, NavigationDrawerAnimationActivity.class);
+            startActivity(animIntent);
 
         }
     }

@@ -56,4 +56,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="NavigationDrawer（网易云音乐）" />
+
+    <Button
+        android:id="@+id/btn_navigation_drawer_anim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navigation Drawer Animation" />
 </LinearLayout>

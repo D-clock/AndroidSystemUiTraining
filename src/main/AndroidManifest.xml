@@ -44,6 +44,7 @@
         <activity
             android:name=".ui.activity.navigation.CloudMusicActivity"
             android:theme="@style/Theme.Translucent.Navigation" />
+        <activity android:name=".ui.activity.navigation.NavigationDrawerAnimationActivity" />
     </application>
 
 </manifest>

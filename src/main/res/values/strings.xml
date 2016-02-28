@@ -13,4 +13,6 @@
     <string name="item_02">Item 2</string>
     <string name="simple_navigation_drawer">SimpleNavigationDrawer</string>
     <string name="simple_drawer">SimpleDrawer</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
