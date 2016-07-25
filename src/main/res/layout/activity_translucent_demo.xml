@@ -9,32 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin">
 
     <Button
-        android:id="@+id/btn_translucent_demo"
+        android:id="@+id/btn_image_translucent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Translucent Bar Demo" />
+        android:text="Image Translucent Bar" />
 
     <Button
-        android:id="@+id/btn_toolbar_demo"
+        android:id="@+id/btn_color_translucent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ToolBar Demo" />
+        android:text="Color Translucent Bar" />
 
     <Button
-        android:id="@+id/btn_navigation_demo"
+        android:id="@+id/btn_best_translucent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Navigation Demo" />
-
-    <Button
-        android:id="@+id/btn_simple_card"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Simple CardView" />
-
-    <Button
-        android:id="@+id/btn_snack_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SnackBar" />
+        android:text="Best Translucent Bar" />
 </LinearLayout>

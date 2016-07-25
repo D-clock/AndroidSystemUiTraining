@@ -17,15 +17,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.translucentbar.ImageTranslucentBarActivity"
+            android:name=".ui.activity.translucent.ImageTranslucentBarActivity"
             android:label="@string/image_translucent_bar"
             android:theme="@style/ImageTranslucentTheme" />
         <activity
-            android:name=".ui.activity.translucentbar.ColorTranslucentBarActivity"
+            android:name=".ui.activity.translucent.ColorTranslucentBarActivity"
             android:label="@string/color_translucent_bar"
             android:theme="@style/ColorTranslucentTheme" />
         <activity
-            android:name=".ui.activity.translucentbar.BestTranslucentBarActivity"
+            android:name=".ui.activity.translucent.BestTranslucentBarActivity"
             android:theme="@style/ColorTranslucentTheme" />
         <activity
             android:name=".ui.activity.toolbar.ToolBarActivity"
@@ -45,6 +45,11 @@
             android:name=".ui.activity.navigation.CloudMusicActivity"
             android:theme="@style/Theme.Translucent.Navigation" />
         <activity android:name=".ui.activity.navigation.NavigationDrawerAnimationActivity" />
+        <activity android:name=".ui.activity.translucent.TranslucentDemoActivity" />
+        <activity android:name=".ui.activity.toolbar.ToolDemoActivity" />
+        <activity android:name=".ui.activity.navigation.NavigationDemoActivity" />
+        <activity android:name=".ui.activity.cardview.SimpleCardActivity" />
+        <activity android:name=".ui.activity.snackbar.SnackBarDemoActivity"></activity>
     </application>
 
 </manifest>

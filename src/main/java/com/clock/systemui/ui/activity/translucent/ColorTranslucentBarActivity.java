@@ -1,10 +1,8 @@
-package com.clock.systemui.ui.activity.translucentbar;
+package com.clock.systemui.ui.activity.translucent;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Toast;
 
 import com.clock.systemui.R;

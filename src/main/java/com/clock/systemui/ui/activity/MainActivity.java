@@ -6,15 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.clock.systemui.R;
-import com.clock.systemui.ui.activity.navigation.CloudMusicActivity;
-import com.clock.systemui.ui.activity.navigation.NavigationDrawerAnimationActivity;
-import com.clock.systemui.ui.activity.navigation.SimpleDrawerActivity;
-import com.clock.systemui.ui.activity.navigation.SimpleNavigationDrawerActivity;
-import com.clock.systemui.ui.activity.toolbar.ToolBarActivity;
-import com.clock.systemui.ui.activity.toolbar.ZhiHuActivity;
-import com.clock.systemui.ui.activity.translucentbar.BestTranslucentBarActivity;
-import com.clock.systemui.ui.activity.translucentbar.ColorTranslucentBarActivity;
-import com.clock.systemui.ui.activity.translucentbar.ImageTranslucentBarActivity;
+import com.clock.systemui.ui.activity.cardview.SimpleCardActivity;
+import com.clock.systemui.ui.activity.navigation.NavigationDemoActivity;
+import com.clock.systemui.ui.activity.snackbar.SnackBarDemoActivity;
+import com.clock.systemui.ui.activity.toolbar.ToolDemoActivity;
+import com.clock.systemui.ui.activity.translucent.TranslucentDemoActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -23,57 +19,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        findViewById(R.id.btn_image_translucent).setOnClickListener(this);
-        findViewById(R.id.btn_color_translucent).setOnClickListener(this);
-        findViewById(R.id.btn_best_translucent).setOnClickListener(this);
-        findViewById(R.id.btn_toolbar_base).setOnClickListener(this);
-        findViewById(R.id.btn_toolbar_zhihu).setOnClickListener(this);
-        findViewById(R.id.btn_simple_drawer).setOnClickListener(this);
-        findViewById(R.id.btn_simple_navigation_drawer).setOnClickListener(this);
-        findViewById(R.id.btn_cloud_music).setOnClickListener(this);
-        findViewById(R.id.btn_navigation_drawer_anim).setOnClickListener(this);
+        findViewById(R.id.btn_translucent_demo).setOnClickListener(this);
+        findViewById(R.id.btn_toolbar_demo).setOnClickListener(this);
+        findViewById(R.id.btn_navigation_demo).setOnClickListener(this);
+        findViewById(R.id.btn_simple_card).setOnClickListener(this);
+        findViewById(R.id.btn_snack_bar).setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
         int viewId = v.getId();
-        if (viewId == R.id.btn_image_translucent) {
-            Intent translucentBarIntent = new Intent(this, ImageTranslucentBarActivity.class);
-            startActivity(translucentBarIntent);
+        if (viewId == R.id.btn_translucent_demo) {
+            Intent intent = new Intent(this, TranslucentDemoActivity.class);
+            startActivity(intent);
 
-        } else if (viewId == R.id.btn_color_translucent) {
-            Intent translucentBarIntent = new Intent(this, ColorTranslucentBarActivity.class);
-            startActivity(translucentBarIntent);
+        } else if (viewId == R.id.btn_toolbar_demo) {
+            Intent intent = new Intent(this, ToolDemoActivity.class);
+            startActivity(intent);
 
-        } else if (viewId == R.id.btn_best_translucent) {
-            Intent translucentBarIntent = new Intent(this, BestTranslucentBarActivity.class);
-            startActivity(translucentBarIntent);
+        } else if (viewId == R.id.btn_navigation_demo) {
+            Intent intent = new Intent(this, NavigationDemoActivity.class);
+            startActivity(intent);
 
-        } else if (viewId == R.id.btn_toolbar_base) {
-            Intent translucentBarIntent = new Intent(this, ToolBarActivity.class);
-            startActivity(translucentBarIntent);
+        } else if (viewId == R.id.btn_simple_card) {
+            Intent intent = new Intent(this, SimpleCardActivity.class);
+            startActivity(intent);
 
-        } else if (viewId == R.id.btn_toolbar_zhihu) {
-            Intent translucentBarIntent = new Intent(this, ZhiHuActivity.class);
-            startActivity(translucentBarIntent);
-
-        } else if (viewId == R.id.btn_simple_drawer) {
-            Intent simpleDrawerIntent = new Intent(this, SimpleDrawerActivity.class);
-            startActivity(simpleDrawerIntent);
-
-        } else if (viewId == R.id.btn_simple_navigation_drawer) {
-            Intent simpleNavigationDrawerIntent = new Intent(this, SimpleNavigationDrawerActivity.class);
-            startActivity(simpleNavigationDrawerIntent);
-
-        } else if (viewId == R.id.btn_cloud_music) {
-            Intent cloudMusicIntent = new Intent(this, CloudMusicActivity.class);
-            startActivity(cloudMusicIntent);
-
-        } else if (viewId == R.id.btn_navigation_drawer_anim){
-            Intent animIntent = new Intent(this, NavigationDrawerAnimationActivity.class);
-            startActivity(animIntent);
+        } else if (viewId == R.id.btn_snack_bar) {
+            Intent intent = new Intent(this, SnackBarDemoActivity.class);
+            startActivity(intent);
 
         }
+
     }
 }

@@ -1,9 +1,8 @@
-package com.clock.systemui.ui.activity.translucentbar;
+package com.clock.systemui.ui.activity.translucent;
 
 import android.os.Bundle;
 
 import com.clock.systemui.R;
-import com.clock.systemui.ui.activity.base.TranslucentBarBaseActivity;
 
 /**
  * TranslucentBar最好的实现方式
