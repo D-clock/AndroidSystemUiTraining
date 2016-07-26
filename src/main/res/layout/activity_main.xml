@@ -27,14 +27,21 @@
         android:text="Navigation Demo" />
 
     <Button
-        android:id="@+id/btn_simple_card"
+        android:id="@+id/btn_card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Simple CardView" />
+        android:text="CardView Demo" />
 
     <Button
         android:id="@+id/btn_snack_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SnackBar" />
+        android:text="SnackBar Demo" />
+
+    <Button
+        android:id="@+id/btn_bar_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AppBarLayout + TabLayout" />
+
 </LinearLayout>

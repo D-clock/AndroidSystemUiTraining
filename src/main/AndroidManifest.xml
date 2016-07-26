@@ -44,12 +44,21 @@
         <activity
             android:name=".ui.activity.navigation.CloudMusicActivity"
             android:theme="@style/Theme.Translucent.Navigation" />
+
         <activity android:name=".ui.activity.navigation.NavigationDrawerAnimationActivity" />
         <activity android:name=".ui.activity.translucent.TranslucentDemoActivity" />
         <activity android:name=".ui.activity.toolbar.ToolDemoActivity" />
+
         <activity android:name=".ui.activity.navigation.NavigationDemoActivity" />
-        <activity android:name=".ui.activity.cardview.SimpleCardActivity" />
-        <activity android:name=".ui.activity.snackbar.SnackBarDemoActivity"></activity>
+        <activity
+            android:name=".ui.activity.cardview.CardViewDemoActivity"
+            android:label="CardView" />
+        <activity
+            android:name=".ui.activity.snackbar.SnackBarDemoActivity"
+            android:label="SnackBar" />
+        <activity
+            android:name=".ui.activity.bartab.BarTabDemoActivity"
+            android:label="AppBarLayout" />
     </application>
 
 </manifest>

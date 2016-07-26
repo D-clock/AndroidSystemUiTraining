@@ -5,12 +5,12 @@ import android.os.Bundle;
 
 import com.clock.systemui.R;
 
-public class SimpleCardActivity extends AppCompatActivity {
+public class CardViewDemoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_simple_card);
+        setContentView(R.layout.activity_card_view_demo);
 
     }
 }
