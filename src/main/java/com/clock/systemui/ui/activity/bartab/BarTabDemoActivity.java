@@ -12,14 +12,14 @@ import android.view.View;
 
 import com.clock.systemui.R;
 import com.clock.systemui.ui.activity.base.BaseActivity;
+import com.clock.systemui.ui.fragment.AuthorInfoFragment;
 
 /**
  * AppBarLayout 和 TabLayout 的使用 Demo
- *
- * 关于 TabLayout使用的很详细的文章：http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/
+ * <p/>
+ * 关于 TabLayout 使用的很详细的文章：http://www.androidhive.info/2015/09/android-material-design-working-with-tabs/
  * 关于 CoordinatorLayout的文章：http://blog.csdn.net/xyz_lmn/article/details/48055919
  * 关于 Material Design 控件的文章：http://blog.csdn.net/eclipsexys/article/details/46349721
- *
  */
 public class BarTabDemoActivity extends BaseActivity {
 

@@ -1,4 +1,4 @@
-package com.clock.systemui.ui.activity.bartab;
+package com.clock.systemui.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,10 +12,17 @@ import com.clock.systemui.R;
  */
 public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAdapter.AuthorViewHolder> {
 
+    private static final int LINEAR = 1;
+    private static final int GRID = 2;
+    private static final int STAGGERED = 3;
+
+    private int type = LINEAR;
+
+
     @Override
     public AuthorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View childView = inflater.inflate(R.layout.author_info_card_layout, parent, false);
+        View childView = inflater.inflate(R.layout.author_card_layout, parent, false);
         AuthorViewHolder viewHolder = new AuthorViewHolder(childView);
         return viewHolder;
     }

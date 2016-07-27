@@ -1,4 +1,4 @@
-package com.clock.systemui.ui.activity.bartab;
+package com.clock.systemui.ui.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,9 +8,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 
 import com.clock.systemui.R;
+import com.clock.systemui.ui.adapter.AuthorRecyclerAdapter;
 
 /**
  * Created by Clock on 2016/7/26.

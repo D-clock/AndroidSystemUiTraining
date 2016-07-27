@@ -44,11 +44,9 @@
         <activity
             android:name=".ui.activity.navigation.CloudMusicActivity"
             android:theme="@style/Theme.Translucent.Navigation" />
-
         <activity android:name=".ui.activity.navigation.NavigationDrawerAnimationActivity" />
         <activity android:name=".ui.activity.translucent.TranslucentDemoActivity" />
         <activity android:name=".ui.activity.toolbar.ToolDemoActivity" />
-
         <activity android:name=".ui.activity.navigation.NavigationDemoActivity" />
         <activity
             android:name=".ui.activity.cardview.CardViewDemoActivity"
@@ -59,6 +57,10 @@
         <activity
             android:name=".ui.activity.bartab.BarTabDemoActivity"
             android:label="AppBarLayout" />
+        <activity
+            android:name=".ui.activity.collapsing.CollapsingDemoActivity"
+            android:label="D_clock爱吃葱花" />
+        <activity android:name=".ui.activity.recycler.RecyclerDemoActivity"></activity>
     </application>
 
 </manifest>
