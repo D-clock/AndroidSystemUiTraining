@@ -34,9 +34,10 @@ public class RecyclerDemoActivity extends AppCompatActivity {
                     mRecyclerView.setAdapter(new AuthorRecyclerAdapter());
 
                 } else if (checkedId == R.id.rb_grid) {
-                    GridLayoutManager gridLayoutManager = new GridLayoutManager(RecyclerDemoActivity.this, 2);
+                    GridLayoutManager gridLayoutManager = new GridLayoutManager(RecyclerDemoActivity.this, 3);
                     gridLayoutManager.setOrientation(GridLayoutManager.HORIZONTAL);
-
+                    mRecyclerView.setLayoutManager(gridLayoutManager);
+                    mRecyclerView.setAdapter(AuthorRecyclerAdapter.newGridInstance());
 
                 } else if (checkedId == R.id.rb_staggered) {
 

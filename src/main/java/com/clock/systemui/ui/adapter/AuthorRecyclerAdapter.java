@@ -18,11 +18,38 @@ public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAd
 
     private int type = LINEAR;
 
+    public static AuthorRecyclerAdapter newLinearInstance() {
+        AuthorRecyclerAdapter adapter = new AuthorRecyclerAdapter();
+        adapter.type = LINEAR;
+        return adapter;
+    }
+
+    public static AuthorRecyclerAdapter newGridInstance() {
+        AuthorRecyclerAdapter adapter = new AuthorRecyclerAdapter();
+        adapter.type = GRID;
+        return adapter;
+    }
+
+    public static AuthorRecyclerAdapter newStraggeredInstance() {
+        AuthorRecyclerAdapter adapter = new AuthorRecyclerAdapter();
+        adapter.type = STAGGERED;
+        return adapter;
+    }
 
     @Override
     public AuthorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View childView = inflater.inflate(R.layout.author_card_layout, parent, false);
+        View childView = null;
+        if (type == LINEAR) {
+            childView = inflater.inflate(R.layout.author_card_layout, parent, false);
+        } else if (type == GRID) {
+            childView = inflater.inflate(R.layout.author_small_card_layout, parent, false);
+        } else if (type == STAGGERED) {
+            childView = inflater.inflate(R.layout.author_small_card_layout, parent, false);
+        } else {
+            childView = inflater.inflate(R.layout.author_card_layout, parent, false);
+        }
+
         AuthorViewHolder viewHolder = new AuthorViewHolder(childView);
         return viewHolder;
     }
