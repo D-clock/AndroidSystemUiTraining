@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,50 +17,50 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.translucent.ImageTranslucentBarActivity"
+            android:name=".activity.translucent.ImageTranslucentBarActivity"
             android:label="@string/image_translucent_bar"
             android:theme="@style/ImageTranslucentTheme" />
         <activity
-            android:name=".ui.activity.translucent.ColorTranslucentBarActivity"
+            android:name=".activity.translucent.ColorTranslucentBarActivity"
             android:label="@string/color_translucent_bar"
             android:theme="@style/ColorTranslucentTheme" />
         <activity
-            android:name=".ui.activity.translucent.BestTranslucentBarActivity"
+            android:name=".activity.translucent.BestTranslucentBarActivity"
             android:theme="@style/ColorTranslucentTheme" />
         <activity
-            android:name=".ui.activity.toolbar.ToolBarActivity"
+            android:name=".activity.toolbar.ToolBarActivity"
             android:label="@string/tool_bar" />
         <activity
-            android:name=".ui.activity.toolbar.ZhiHuActivity"
+            android:name=".activity.toolbar.ZhiHuActivity"
             android:label="@string/zhi_hu"
             android:theme="@style/Theme.ZhiHu" />
         <activity
-            android:name=".ui.activity.navigation.SimpleDrawerActivity"
+            android:name=".activity.navigation.SimpleDrawerActivity"
             android:label="@string/simple_drawer" />
         <activity
-            android:name=".ui.activity.navigation.SimpleNavigationDrawerActivity"
+            android:name=".activity.navigation.SimpleNavigationDrawerActivity"
             android:label="@string/simple_navigation_drawer"
             android:theme="@style/Theme.Translucent.Navigation" />
         <activity
-            android:name=".ui.activity.navigation.CloudMusicActivity"
+            android:name=".activity.navigation.CloudMusicActivity"
             android:theme="@style/Theme.Translucent.Navigation" />
-        <activity android:name=".ui.activity.navigation.NavigationDrawerAnimationActivity" />
-        <activity android:name=".ui.activity.translucent.TranslucentDemoActivity" />
-        <activity android:name=".ui.activity.toolbar.ToolDemoActivity" />
-        <activity android:name=".ui.activity.navigation.NavigationDemoActivity" />
+        <activity android:name=".activity.navigation.NavigationDrawerAnimationActivity" />
+        <activity android:name=".activity.translucent.TranslucentDemoActivity" />
+        <activity android:name=".activity.toolbar.ToolDemoActivity" />
+        <activity android:name=".activity.navigation.NavigationDemoActivity" />
         <activity
-            android:name=".ui.activity.cardview.CardViewDemoActivity"
+            android:name=".activity.cardview.CardViewDemoActivity"
             android:label="CardView" />
         <activity
-            android:name=".ui.activity.snackbar.SnackBarDemoActivity"
+            android:name=".activity.snackbar.SnackBarDemoActivity"
             android:label="SnackBar" />
         <activity
-            android:name=".ui.activity.bartab.BarTabDemoActivity"
+            android:name=".activity.bartab.BarTabDemoActivity"
             android:label="AppBarLayout" />
         <activity
-            android:name=".ui.activity.collapsing.CollapsingDemoActivity"
+            android:name=".activity.collapsing.CollapsingDemoActivity"
             android:label="D_clock爱吃葱花" />
-        <activity android:name=".ui.activity.recycler.RecyclerDemoActivity"></activity>
+        <activity android:name=".activity.recycler.RecyclerDemoActivity"></activity>
     </application>
 
 </manifest>
