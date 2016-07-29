@@ -2,9 +2,9 @@
 
 本代码库整理总结 Android 系统自身UI特性，主要包含**代码实践**和**特性总结**两方面的内容。有兴趣的朋友欢迎fork、star、watch。
 
-## 最新更新 （最后编辑于 2016-07-27）
+## 最新更新 （最后编辑于 2016-07-29）
 
-- 新增 Material Design 系列控件的体验，其中包括 SnackBar、FloatingActionButton、AppBarLayout、CardView、CoordinatorLayout、CollapsingToolbarLayout 等
+- 新增 Material Design 系列控件的体验，其中包括 RecyclerView、SnackBar、FloatingActionButton、AppBarLayout、CardView、CoordinatorLayout、CollapsingToolbarLayout、BottomSheets 等
 - 写一点个人感想，Android L 之后，嵌套滚动机制的应用越发重要了都。。。。。。。。
 
 ## 实践总结

@@ -1,4 +1,4 @@
-package com.clock.systemui.activity.bartab;
+package com.clock.systemui.activity.bt;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;

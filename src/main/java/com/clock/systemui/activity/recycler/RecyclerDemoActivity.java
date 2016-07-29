@@ -36,13 +36,13 @@ public class RecyclerDemoActivity extends AppCompatActivity {
             mAuthorInfoList.add(authorInfo1);
 
             AuthorInfo authorInfo2 = new AuthorInfo();
-            authorInfo1.setMotto("I am Android Developer！HaHaHaHaHaHaHaHaHa");
-            authorInfo1.setNickName("D_clock爱吃大西瓜西瓜西瓜西瓜西瓜");
+            authorInfo2.setMotto("I am Android Developer！HaHaHaHaHaHaHaHaHa");
+            authorInfo2.setNickName("D_clock爱吃大西瓜西瓜西瓜西瓜西瓜");
             mAuthorInfoList.add(authorInfo2);
 
             AuthorInfo authorInfo3 = new AuthorInfo();
-            authorInfo1.setMotto("Hello World!Hello World!Hello World!Hello World!Hello World!");
-            authorInfo1.setNickName("D_clock爱吃葱花葱花葱花葱花葱花葱花");
+            authorInfo3.setMotto("Hello World!Hello World!Hello World!Hello World!Hello World!");
+            authorInfo3.setNickName("D_clock爱吃葱花葱花葱花葱花葱花葱花");
             mAuthorInfoList.add(authorInfo3);
         }
 

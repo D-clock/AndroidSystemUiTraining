@@ -6,7 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.clock.systemui.R;
-import com.clock.systemui.activity.bartab.BarTabDemoActivity;
+import com.clock.systemui.activity.bs.BottomSheetsDemoActivity;
+import com.clock.systemui.activity.bt.BarTabDemoActivity;
 import com.clock.systemui.activity.cardview.CardViewDemoActivity;
 import com.clock.systemui.activity.collapsing.CollapsingDemoActivity;
 import com.clock.systemui.activity.navigation.NavigationDemoActivity;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_snack_bar).setOnClickListener(this);
         findViewById(R.id.btn_bar_tab).setOnClickListener(this);
         findViewById(R.id.btn_collapsing).setOnClickListener(this);
+        findViewById(R.id.btn_bottom_sheets).setOnClickListener(this);
 
     }
 
@@ -66,6 +68,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (viewId == R.id.btn_collapsing) {
             Intent intent = new Intent(this, CollapsingDemoActivity.class);
+            startActivity(intent);
+
+        } else if (viewId == R.id.btn_bottom_sheets) {
+            Intent intent = new Intent(this, BottomSheetsDemoActivity.class);
             startActivity(intent);
 
         }

@@ -55,12 +55,13 @@
             android:name=".activity.snackbar.SnackBarDemoActivity"
             android:label="SnackBar" />
         <activity
-            android:name=".activity.bartab.BarTabDemoActivity"
+            android:name=".activity.bt.BarTabDemoActivity"
             android:label="AppBarLayout" />
         <activity
             android:name=".activity.collapsing.CollapsingDemoActivity"
             android:label="D_clock爱吃葱花" />
-        <activity android:name=".activity.recycler.RecyclerDemoActivity"></activity>
+        <activity android:name=".activity.recycler.RecyclerDemoActivity" />
+        <activity android:name=".activity.bs.BottomSheetsDemoActivity"></activity>
     </application>
 
 </manifest>
