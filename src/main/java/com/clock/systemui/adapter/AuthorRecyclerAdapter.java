@@ -1,10 +1,10 @@
 package com.clock.systemui.adapter;
 
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.clock.systemui.R;
@@ -17,44 +17,25 @@ import java.util.List;
  */
 public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAdapter.AuthorViewHolder> {
 
-    private static final int LINEAR = 1;
-    private static final int GRID = 2;
-    private static final int STAGGERED = 3;
-
     private List<AuthorInfo> mAuthorInfoList;
+    /**
+     * item view 的类型是否是小类型的
+     */
+    private boolean mIsSmall = false;
 
-    private int mType = LINEAR;
-
-    public static AuthorRecyclerAdapter newLinearInstance() {
-        AuthorRecyclerAdapter adapter = new AuthorRecyclerAdapter();
-        adapter.mType = LINEAR;
-        return adapter;
+    public AuthorRecyclerAdapter(List<AuthorInfo> authorInfoList) {
+        this.mAuthorInfoList = authorInfoList;
     }
 
-    public static AuthorRecyclerAdapter newGridInstance() {
-        AuthorRecyclerAdapter adapter = new AuthorRecyclerAdapter();
-        adapter.mType = GRID;
-        return adapter;
-    }
-
-    public static AuthorRecyclerAdapter newStaggeredInstance(List<AuthorInfo> authorInfoList) {
-        AuthorRecyclerAdapter adapter = new AuthorRecyclerAdapter();
-        adapter.mType = STAGGERED;
-        adapter.mAuthorInfoList = authorInfoList;
-        return adapter;
+    public void setSmallType(boolean isSmall) {
+        this.mIsSmall = isSmall;
     }
 
     @Override
     public AuthorViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View childView = null;
-        if (mType == LINEAR) {
-            childView = inflater.inflate(R.layout.author_card_layout, parent, false);
-
-        } else if (mType == GRID) {
-            childView = inflater.inflate(R.layout.author_small_card_layout, parent, false);
-
-        } else if (mType == STAGGERED) {
+        if (mIsSmall) {
             childView = inflater.inflate(R.layout.author_small_card_layout, parent, false);
 
         } else {
@@ -67,36 +48,30 @@ public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAd
 
     @Override
     public void onBindViewHolder(AuthorViewHolder holder, int position) {
-        if (isStaggered()) {
-            AuthorInfo authorInfo = mAuthorInfoList.get(position);
-            holder.mNickNameView.setText(authorInfo.getNickName());
-            holder.mMottoView.setText(authorInfo.getMotto());
-        }
+        AuthorInfo authorInfo = mAuthorInfoList.get(position);
+        holder.mPortraitView.setImageResource(authorInfo.getPortrait());
+        holder.mNickNameView.setText(authorInfo.getNickName());
+        holder.mMottoView.setText(authorInfo.getMotto());
     }
 
     @Override
     public int getItemCount() {
-        if (isStaggered()) {
-            if (mAuthorInfoList == null) {
-                return 0;
-            }
-            return mAuthorInfoList.size();
+        if (mAuthorInfoList == null) {
+            return 0;
         }
-        return 20;
-    }
-
-    private boolean isStaggered() {
-        return mType == STAGGERED;
+        return mAuthorInfoList.size();
     }
 
     class AuthorViewHolder extends RecyclerView.ViewHolder {
 
+        ImageView mPortraitView;
         TextView mNickNameView;
         TextView mMottoView;
 
         public AuthorViewHolder(View itemView) {
             super(itemView);
 
+            mPortraitView = (ImageView) itemView.findViewById(R.id.iv_portrait);
             mNickNameView = (TextView) itemView.findViewById(R.id.tv_nickname);
             mMottoView = (TextView) itemView.findViewById(R.id.tv_motto);
 

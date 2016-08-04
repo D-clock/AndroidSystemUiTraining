@@ -1,13 +1,14 @@
 package com.clock.systemui.activity.recycler;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.clock.systemui.R;
 import com.clock.systemui.adapter.AuthorRecyclerAdapter;
@@ -18,9 +19,8 @@ import java.util.List;
 
 public class RecyclerDemoActivity extends AppCompatActivity {
 
-    private RadioGroup mRadioGroup;
     private RecyclerView mRecyclerView;
-
+    private AuthorRecyclerAdapter mRecyclerAdapter;
     private List<AuthorInfo> mAuthorInfoList;
 
     @Override
@@ -28,6 +28,46 @@ public class RecyclerDemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recycler_demo);
 
+        initData();
+        initView();
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.recyclerview_option, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.linear) {
+            LinearLayoutManager linearLayoutManager = new LinearLayoutManager(RecyclerDemoActivity.this);
+            linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+            mRecyclerView.setLayoutManager(linearLayoutManager);
+            mRecyclerAdapter.setSmallType(false);
+            mRecyclerView.setAdapter(mRecyclerAdapter);
+
+        } else if (itemId == R.id.grid) {
+            GridLayoutManager gridLayoutManager = new GridLayoutManager(RecyclerDemoActivity.this, 3);
+            gridLayoutManager.setOrientation(GridLayoutManager.HORIZONTAL);
+            mRecyclerView.setLayoutManager(gridLayoutManager);
+            mRecyclerAdapter.setSmallType(true);
+            mRecyclerView.setAdapter(mRecyclerAdapter);
+
+        } else if (itemId == R.id.staggered) {
+            StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
+            mRecyclerView.setLayoutManager(staggeredGridLayoutManager);
+            mRecyclerAdapter.setSmallType(true);
+            mRecyclerView.setAdapter(mRecyclerAdapter);
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void initData() {
         mAuthorInfoList = new ArrayList<>();
         for (int counter = 0; counter < 6; counter++) {
             AuthorInfo authorInfo1 = new AuthorInfo();
@@ -45,35 +85,15 @@ public class RecyclerDemoActivity extends AppCompatActivity {
             authorInfo3.setNickName("D_clock爱吃葱花葱花葱花葱花葱花葱花");
             mAuthorInfoList.add(authorInfo3);
         }
+    }
 
+    private void initView() {
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-
-        mRadioGroup = (RadioGroup) findViewById(R.id.rg_layout_option);
-        mRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                if (checkedId == R.id.rb_linear) {
-                    LinearLayoutManager linearLayoutManager = new LinearLayoutManager(RecyclerDemoActivity.this);
-                    linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-                    mRecyclerView.setLayoutManager(linearLayoutManager);
-                    mRecyclerView.setAdapter(new AuthorRecyclerAdapter());
-
-                } else if (checkedId == R.id.rb_grid) {
-                    GridLayoutManager gridLayoutManager = new GridLayoutManager(RecyclerDemoActivity.this, 3);
-                    gridLayoutManager.setOrientation(GridLayoutManager.HORIZONTAL);
-                    mRecyclerView.setLayoutManager(gridLayoutManager);
-                    mRecyclerView.setAdapter(AuthorRecyclerAdapter.newGridInstance());
-
-                } else if (checkedId == R.id.rb_staggered) {
-                    StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL);
-                    mRecyclerView.setLayoutManager(staggeredGridLayoutManager);
-                    mRecyclerView.setAdapter(AuthorRecyclerAdapter.newStaggeredInstance(mAuthorInfoList));
-
-                }
-
-            }
-        });
-        RadioButton linearRadioButton = (RadioButton) findViewById(R.id.rb_linear);
-        linearRadioButton.setChecked(true);
+        mRecyclerAdapter = new AuthorRecyclerAdapter(mAuthorInfoList);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(RecyclerDemoActivity.this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        mRecyclerView.setLayoutManager(linearLayoutManager);
+        mRecyclerAdapter.setSmallType(false);
+        mRecyclerView.setAdapter(mRecyclerAdapter);
     }
 }

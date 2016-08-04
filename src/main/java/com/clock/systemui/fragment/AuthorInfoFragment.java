@@ -11,6 +11,9 @@ import android.view.ViewGroup;
 
 import com.clock.systemui.R;
 import com.clock.systemui.adapter.AuthorRecyclerAdapter;
+import com.clock.systemui.bean.AuthorInfo;
+
+import java.util.ArrayList;
 
 /**
  * Created by Clock on 2016/7/26.
@@ -31,7 +34,7 @@ public class AuthorInfoFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new AuthorRecyclerAdapter());
+        recyclerView.setAdapter(new AuthorRecyclerAdapter(AuthorInfo.createTestData()));
         return rootView;
     }
 }

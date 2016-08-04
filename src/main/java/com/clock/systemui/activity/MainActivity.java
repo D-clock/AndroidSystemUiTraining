@@ -10,6 +10,7 @@ import com.clock.systemui.activity.bs.BottomSheetsDemoActivity;
 import com.clock.systemui.activity.bt.BarTabDemoActivity;
 import com.clock.systemui.activity.cardview.CardViewDemoActivity;
 import com.clock.systemui.activity.collapsing.CollapsingDemoActivity;
+import com.clock.systemui.activity.listview.ListViewDemoActivity;
 import com.clock.systemui.activity.navigation.NavigationDemoActivity;
 import com.clock.systemui.activity.recycler.RecyclerDemoActivity;
 import com.clock.systemui.activity.snackbar.SnackBarDemoActivity;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_translucent_demo).setOnClickListener(this);
         findViewById(R.id.btn_toolbar_demo).setOnClickListener(this);
         findViewById(R.id.btn_navigation_demo).setOnClickListener(this);
+        findViewById(R.id.btn_listview_demo).setOnClickListener(this);
         findViewById(R.id.btn_recycler_demo).setOnClickListener(this);
         findViewById(R.id.btn_card_view).setOnClickListener(this);
         findViewById(R.id.btn_snack_bar).setOnClickListener(this);
@@ -48,6 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         } else if (viewId == R.id.btn_navigation_demo) {
             Intent intent = new Intent(this, NavigationDemoActivity.class);
+            startActivity(intent);
+
+        } else if (viewId == R.id.btn_listview_demo) {
+            Intent intent = new Intent(this, ListViewDemoActivity.class);
             startActivity(intent);
 
         } else if (viewId == R.id.btn_recycler_demo) {

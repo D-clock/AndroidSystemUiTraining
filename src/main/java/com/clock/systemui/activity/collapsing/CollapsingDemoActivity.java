@@ -10,6 +10,10 @@ import android.view.View;
 import com.clock.systemui.R;
 import com.clock.systemui.adapter.AuthorRecyclerAdapter;
 import com.clock.systemui.activity.base.BaseActivity;
+import com.clock.systemui.bean.AuthorInfo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * CollapsingToolbarLayout 使用Demo
@@ -45,7 +49,7 @@ public class CollapsingDemoActivity extends BaseActivity {
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
-        mRecyclerView.setAdapter(new AuthorRecyclerAdapter());
+        mRecyclerView.setAdapter(new AuthorRecyclerAdapter(AuthorInfo.createTestData()));
 
     }
 }
