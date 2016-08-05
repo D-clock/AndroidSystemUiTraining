@@ -4,6 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import com.clock.systemui.R;
@@ -65,6 +66,24 @@ public class AuthorListAdapter extends BaseAdapter {
         viewHolder.mMotto.setText(authorInfo.getMotto());
 
         return convertView;
+    }
+
+    /**
+     * 更新Item视图，减少不必要的重绘
+     *
+     * @param listView
+     * @param position
+     */
+    public void updateItemView(ListView listView, int position) {
+        int index = position - listView.getFirstVisiblePosition();
+        if (index >= 0 && index < listView.getChildCount()) {
+            AuthorInfo authorInfo = mAuthorInfoList.get(position);
+            authorInfo.setNickName("Google Android");
+            authorInfo.setMotto("My name is Android .");
+            authorInfo.setPortrait(R.mipmap.ic_launcher);
+            View itemView = listView.getChildAt(index);
+            getView(position, itemView, listView);
+        }
     }
 
     private static class ViewHolder {

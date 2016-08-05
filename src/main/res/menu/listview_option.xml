@@ -8,4 +8,8 @@
     <item
         android:id="@id/clear"
         android:title="清空" />
+
+    <item
+        android:id="@id/partial"
+        android:title="局部更新" />
 </menu>

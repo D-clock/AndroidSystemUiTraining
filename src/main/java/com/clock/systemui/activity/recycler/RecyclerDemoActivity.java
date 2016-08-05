@@ -63,6 +63,12 @@ public class RecyclerDemoActivity extends AppCompatActivity {
             mRecyclerAdapter.setSmallType(true);
             mRecyclerView.setAdapter(mRecyclerAdapter);
 
+        } else if (itemId == R.id.insert_item) {
+            mRecyclerAdapter.notifyItemInserted(2);
+
+        } else if (itemId == R.id.delete_item) {
+            mRecyclerAdapter.notifyItemChanged(3);
+
         }
         return super.onOptionsItemSelected(item);
     }

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="action_search" type="id">false</item>
-    <item name="action_notification" type="id">false</item>
-    <item name="action_settings" type="id">false</item>
-    <item name="action_about" type="id">false</item>
-    <item name="normal" type="id">false</item>
-    <item name="clear" type="id">false</item>
-    <item name="linear" type="id">false</item>
-    <item name="grid" type="id">false</item>
-    <item name="staggered" type="id">false</item>
+    <item name="action_search" type="id" />
+    <item name="action_notification" type="id" />
+    <item name="action_settings" type="id" />
+    <item name="action_about" type="id" />
+    <item name="normal" type="id" />
+    <item name="clear" type="id" />
+    <item name="linear" type="id" />
+    <item name="grid" type="id" />
+    <item name="staggered" type="id" />
+    <item name="partial" type="id" />
 </resources>
