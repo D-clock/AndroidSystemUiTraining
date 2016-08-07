@@ -8,57 +8,76 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin">
 
-    <Button
-        android:id="@+id/btn_translucent_demo"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Translucent Bar Demo" />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_toolbar_demo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ToolBar Demo" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_navigation_demo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Navigation Demo" />
+            <Button
+                android:id="@+id/btn_translucent_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Translucent Bar Demo" />
 
-    <Button
-        android:id="@+id/btn_recycler_demo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RecyclerView Demo" />
+            <Button
+                android:id="@+id/btn_toolbar_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ToolBar Demo" />
 
-    <Button
-        android:id="@+id/btn_card_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CardView Demo" />
+            <Button
+                android:id="@+id/btn_navigation_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigation Demo" />
 
-    <Button
-        android:id="@+id/btn_snack_bar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SnackBar Demo" />
+            <Button
+                android:id="@+id/btn_listview_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ListView Demo" />
 
-    <Button
-        android:id="@+id/btn_bar_tab"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AppBarLayout + TabLayout" />
+            <Button
+                android:id="@+id/btn_recycler_demo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RecyclerView Demo" />
 
-    <Button
-        android:id="@+id/btn_collapsing"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CollapsingToolbarLayout" />
+            <Button
+                android:id="@+id/btn_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CardView Demo" />
 
-    <Button
-        android:id="@+id/btn_bottom_sheets"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bottom Sheets Demo" />
+            <Button
+                android:id="@+id/btn_snack_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SnackBar Demo" />
+
+            <Button
+                android:id="@+id/btn_bar_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AppBarLayout + TabLayout" />
+
+            <Button
+                android:id="@+id/btn_collapsing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CollapsingToolbarLayout" />
+
+            <Button
+                android:id="@+id/btn_bottom_sheets"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bottom Sheets Demo" />
+        </LinearLayout>
+    </ScrollView>
+
+
 </LinearLayout>

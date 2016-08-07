@@ -10,7 +10,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:layout_margin="5dp"
-        android:src="@mipmap/lufy" />
+        tools:src="@mipmap/lufy" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,15 +23,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:singleLine="true"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:text="D_clock爱吃葱花" />
+            tools:text="D_clock爱吃葱花" />
 
         <TextView
             android:id="@+id/tv_motto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Diycode 大管家，闭关写代码" />
+            android:singleLine="true"
+            tools:text="Diycode 大管家，闭关写代码" />
     </LinearLayout>
 </LinearLayout>

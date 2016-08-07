@@ -60,8 +60,13 @@
         <activity
             android:name=".activity.collapsing.CollapsingDemoActivity"
             android:label="D_clock爱吃葱花" />
-        <activity android:name=".activity.recycler.RecyclerDemoActivity" />
-        <activity android:name=".activity.bs.BottomSheetsDemoActivity"></activity>
+        <activity
+            android:name=".activity.recycler.RecyclerDemoActivity"
+            android:label="RecyclerView" />
+        <activity android:name=".activity.bs.BottomSheetsDemoActivity" />
+        <activity
+            android:name=".activity.listview.ListViewDemoActivity"
+            android:label="ListView" />
     </application>
 
 </manifest>

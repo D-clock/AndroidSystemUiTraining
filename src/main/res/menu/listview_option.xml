@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@id/normal"
+        android:title="普通" />
+
+    <item
+        android:id="@id/clear"
+        android:title="清空" />
+
+    <item
+        android:id="@id/partial"
+        android:title="局部更新" />
+</menu>
