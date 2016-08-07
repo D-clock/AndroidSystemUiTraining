@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.clock.systemui.R;
 import com.clock.systemui.bean.AuthorInfo;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -60,6 +61,27 @@ public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAd
             return 0;
         }
         return mAuthorInfoList.size();
+    }
+
+    /**
+     * 移动Item
+     *
+     * @param fromPosition
+     * @param toPosition
+     */
+    public void moveItem(int fromPosition, int toPosition) {
+        Collections.swap(mAuthorInfoList, fromPosition, toPosition);//做数据的交换
+        notifyItemMoved(fromPosition, toPosition);
+    }
+
+    /**
+     * 滑动Item
+     *
+     * @param position
+     */
+    public void removeItem(int position) {
+        mAuthorInfoList.remove(position);//删除数据
+        notifyItemRemoved(position);
     }
 
     class AuthorViewHolder extends RecyclerView.ViewHolder {

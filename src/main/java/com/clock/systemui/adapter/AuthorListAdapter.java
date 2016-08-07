@@ -1,5 +1,6 @@
 package com.clock.systemui.adapter;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -49,7 +50,8 @@ public class AuthorListAdapter extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder viewHolder = null;
         if (convertView == null) {
-            convertView = View.inflate(parent.getContext(), R.layout.author_info_layout, null);
+            LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+            convertView = inflater.inflate(R.layout.author_info_layout, parent, false);
             viewHolder = new ViewHolder();
             viewHolder.mPortrait = (ImageView) convertView.findViewById(R.id.iv_portrait);
             viewHolder.mNickName = (TextView) convertView.findViewById(R.id.tv_nickname);

@@ -20,4 +20,8 @@
     <item
         android:id="@+id/delete_item"
         android:title="删一条" />
+
+    <item
+        android:id="@+id/update_item"
+        android:title="局部刷新" />
 </menu>
