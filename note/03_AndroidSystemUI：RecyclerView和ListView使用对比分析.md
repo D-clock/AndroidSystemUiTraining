@@ -18,7 +18,7 @@
 
 作为一枚控件，要引起开发者使用的欲望自然先是从显示效果看起（看脸的世界），ListView 大家对效果已经很熟悉了，这里直接跳过，而作为 RecyclerView，它能带给效果要比 ListView 强大得多，如下图
 
-![](http://diycode.b0.upaiyun.com/photo/2016/c21b4809253c343a61fef036ef7c8ddb.gif)
+![](http://diycode.b0.upaiyun.com/photo/2016/c27575b1c8ced577e52e8815a28d9945.gif)
 
 Android 默认提供的 RecyclerView 就能支持 **线性布局**、**网格布局**、**瀑布流布局** 三种（这里我们暂且不提代码细节，后文再说），而且同时还能够控制横向还是纵向滚动。怎样，从效果上足以碾压 ListView 有木有。
 
@@ -325,7 +325,7 @@ OK，关于 RecyclerView 和 ListView 一些常用的功能和 API 的对比，�
 
 熟悉 Android 触摸事件分发机制的童鞋肯定知道，Touch 事件在进行分发的时候，由父 View 向它的子 View 传递，一旦某个子 View 开始接收进行处理，那么接下来所有事件都将由这个 View 来进行处理，它的 ViewGroup 将不会再接收到这些事件，直到下一次手指按下。而嵌套滚动机制（NestedScrolling）就是为了弥补这一机制的不足，为了让子 View 能和父 View 同时处理一个 Touch 事件。关于嵌套滚动机制（NestedScrolling），实现上相对是比较复杂的，此处就不去拓展说明，其关键在于 **NestedScrollingChild** 和 **NestedScrollingParent** 两个接口，以及系统对这两个接口的实现类 **NestedScrollingChildHelper** 和 **NestedScrollingParentHelper** 大家可以查阅相关的资料。可能说起来太抽象了，这里拿一个简单的示例效果来说明好了，如下方是用 CollapsingToolbarLayout 和 RecyclerView 搭配的效果：
 
-![](http://diycode.b0.upaiyun.com/photo/2016/15ce5ac49bc0ba2db8de352e706c9d71.gif)
+![](http://diycode.b0.upaiyun.com/photo/2016/e4b453a5f25223ba0bc7982da1684fa2.gif)
 
 一开始上面一大块区域就是 CollapsingToolbarLayout ，下方的列表是 RecyclerView ，当然 RecyclerView 向上滑动时，CollapsingToolbarLayout 能够同时网上收缩，直到只剩下顶部的 Toolbar。之所以能够实现这种效果，就是完全依赖于嵌套滚动机制，如果没有这套机制，按照原有的触摸事件分发逻辑， RecyclerView 内部已经把 Touch 事件消耗掉了，完全无法引起顶部的 CollapsingToolbarLayout 产生联动收缩的效果。我们可以查看 RecyclerView 的代码实现，发现它已经实现了 NestedScrollingChild 接口
 
@@ -333,7 +333,7 @@ OK，关于 RecyclerView 和 ListView 一些常用的功能和 API 的对比，�
 
 如果在其他代码布局都不变的情况下，我们把 RecyclerView 替换成 ListView ，则无法产生上面图中的动态效果，因为 ListView 并不支持嵌套滚动机制，事件在 ListView 内部已经被消耗且无法传递出来，大家可以自行尝试验证一下。对下方 AppBarLayout 的使用也是同理。
 
-![](http://diycode.b0.upaiyun.com/photo/2016/ef3ffac06d4ee19fef0d9701cf7b716a.gif)
+![](http://diycode.b0.upaiyun.com/photo/2016/2ecb34e20deb41a979cdcfd8a1881005.gif)
 
 关于 AppBarLayout 和 CollapsingToolbarLayout，它们并不是什么第三方控件，而是 Android 官方提供的 MaterialDesign 设计风格的控件，大家可以在官方文档中搜索到它们的资料，如果你用过 Android 原生系统，你可以在通讯录等系统内置应用看到它们的身影。如果你想使用类似 AppBarLayout 、 CollapsingToolbarLayout 这种需要嵌套滚动的机制才能达到效果的控件，那么 RecyclerView 将是你的不二之选，因为 ListView 在此根本无法发挥作用。同样的，ScrollView 也是不支持嵌套滚动机制，但是你可以使用 NestedScrollView 。
 
