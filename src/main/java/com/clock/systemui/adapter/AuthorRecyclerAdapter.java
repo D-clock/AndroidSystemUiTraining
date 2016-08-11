@@ -70,7 +70,16 @@ public class AuthorRecyclerAdapter extends RecyclerView.Adapter<AuthorRecyclerAd
      * @param toPosition
      */
     public void moveItem(int fromPosition, int toPosition) {
-        Collections.swap(mAuthorInfoList, fromPosition, toPosition);//做数据的交换
+        //做数据的交换
+        if (fromPosition < toPosition) {
+            for (int index = fromPosition; index < toPosition; index++) {
+                Collections.swap(mAuthorInfoList, index, index + 1);
+            }
+        } else {
+            for (int index = fromPosition; index > toPosition; index--) {
+                Collections.swap(mAuthorInfoList, index, index - 1);
+            }
+        }
         notifyItemMoved(fromPosition, toPosition);
     }
 
